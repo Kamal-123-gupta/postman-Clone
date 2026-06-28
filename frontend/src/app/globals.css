@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0C0C0D;
+  --foreground: #F2F2F7;
+  
+  --pm-bg-primary: #0C0C0D;
+  --pm-bg-secondary: #18181A;
+  --pm-bg-tertiary: #1E1E20;
+  --pm-border: #2C2C2E;
+  --pm-orange: #FF6C37;
+  --pm-orange-hover: #E05624;
+  --pm-text-primary: #F2F2F7;
+  --pm-text-secondary: #AEAEB2;
+  --pm-text-muted: #636366;
+  
+  --pm-get: #34C759;
+  --pm-post: #FF9500;
+  --pm-put: #0A84FF;
+  --pm-patch: #5856D6;
+  --pm-delete: #FF453A;
+  --pm-options: #AF52DE;
+  --pm-head: #5AC8FA;
+}
+
+@theme {
+  --color-pm-bg-primary: var(--pm-bg-primary);
+  --color-pm-bg-secondary: var(--pm-bg-secondary);
+  --color-pm-bg-tertiary: var(--pm-bg-tertiary);
+  --color-pm-border: var(--pm-border);
+  --color-pm-orange: var(--pm-orange);
+  --color-pm-orange-hover: var(--pm-orange-hover);
+  --color-pm-text-primary: var(--pm-text-primary);
+  --color-pm-text-secondary: var(--pm-text-secondary);
+  --color-pm-text-muted: var(--pm-text-muted);
+  
+  --color-pm-get: var(--pm-get);
+  --color-pm-post: var(--pm-post);
+  --color-pm-put: var(--pm-put);
+  --color-pm-patch: var(--pm-patch);
+  --color-pm-delete: var(--pm-delete);
+  --color-pm-options: var(--pm-options);
+  --color-pm-head: var(--pm-head);
+}
+
+body {
+  background-color: var(--pm-bg-primary);
+  color: var(--pm-text-primary);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar for high-density tools aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pm-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pm-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pm-text-muted);
+}
+
+/* Custom styles for tab inputs */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
